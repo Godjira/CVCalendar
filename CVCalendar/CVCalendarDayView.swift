@@ -13,6 +13,9 @@ public final class CVCalendarDayView: UIView {
     public let weekdayIndex: Int!
     public weak var weekView: CVCalendarWeekView!
     
+    public var preliminaryView: UIView?
+    public var supplementaryView: UIView?
+    
     public var date: CVDate!
     public var dayLabel: UILabel!
     
@@ -59,8 +62,6 @@ public final class CVCalendarDayView: UIView {
     
     // MARK: - Private properties
     
-    fileprivate var preliminaryView: UIView?
-    fileprivate var supplementaryView: UIView?
     fileprivate var dotColors = [UIColor]()
     
     // MARK: - Initialization
